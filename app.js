@@ -154,7 +154,14 @@
             default:
                return;   
          }
-      
+         
+
+         result = parseFloat(result);
+         if (result % 1 === 0) {
+            result = parseInt(result)
+         } else {
+            result = result.toFixed(2);
+         }
          
          current.innerText = '';
          previous.innerText = result;
@@ -346,17 +353,17 @@ document.addEventListener('keydown',e => {
       resultado();}
    if (e.which === 32) e.preventDefault(); // Bar space off default inputs
    if (e.which == 8) current.innerText = current.innerText.slice(0,-1); // backspace delete last char
-   if (e.shiftKey && e.which === 187) add(); //
+   if (e.shiftKey && e.which === 187 || e.which === 107) add(); //
    if (e.which === 187 && !e.shiftKey) resultado(); // equal keyboard for result
-   if (e.which === 189 && !e.shiftKey) subtract();
-   if (e.which === 56 && e.shiftKey) multiply();
-   if (e.which === 191 && !e.shiftKey) division();
+   if (e.which === 189 && !e.shiftKey || e.which === 109) subtract();
+   if (e.which === 56 && e.shiftKey || e.which === 106) multiply();
+   if (e.which === 191 && !e.shiftKey || e.which === 111) division();
    if (e.which === 53 && e.shiftKey) percentage();   
 })
 
 
 document.addEventListener('keydown', e => {
-if (e.which === 48 && !e.shiftKey) {
+if (e.which === 48 && !e.shiftKey || e.which === 96 && !e.shiftKey) {
    if (again === true) {
       current.innerText = '';
       again = false;
@@ -365,7 +372,7 @@ if (e.which === 48 && !e.shiftKey) {
 })
 
 document.addEventListener('keydown', e => {
-   if (e.which === 49 && !e.shiftKey) {
+   if (e.which === 49 && !e.shiftKey || e.which === 97 && !e.shiftKey) {
       if (again === true) {
          current.innerText = '';
          again = false;
@@ -374,7 +381,7 @@ document.addEventListener('keydown', e => {
    })
 
 document.addEventListener('keydown', e => {
-      if (e.which === 50 && !e.shiftKey) {
+      if (e.which === 50 && !e.shiftKey || e.which === 98 && !e.shiftKey) {
          if (again === true) {
             current.innerText = '';
             again = false;
@@ -383,7 +390,7 @@ document.addEventListener('keydown', e => {
       })
 
       document.addEventListener('keydown', e => {
-         if (e.which === 51 && !e.shiftKey) {
+         if (e.which === 51 && !e.shiftKey || e.which === 99 && !e.shiftKey) {
             if (again === true) {
                current.innerText = '';
                again = false;
@@ -392,7 +399,7 @@ document.addEventListener('keydown', e => {
          })
 
          document.addEventListener('keydown', e => {
-            if (e.which === 52 && !e.shiftKey) {
+            if (e.which === 52 && !e.shiftKey || e.which === 100 && !e.shiftKey) {
                if (again === true) {
                   current.innerText = '';
                   again = false;
@@ -401,7 +408,7 @@ document.addEventListener('keydown', e => {
             })
 
             document.addEventListener('keydown', e => {
-               if (e.which === 53 && !e.shiftKey) {
+               if (e.which === 53 && !e.shiftKey || e.which === 101 && !e.shiftKey) {
                   if (again === true) {
                      current.innerText = '';
                      again = false;
@@ -410,7 +417,7 @@ document.addEventListener('keydown', e => {
                })
 
                document.addEventListener('keydown', e => {
-                  if (e.which === 54 && !e.shiftKey) {
+                  if (e.which === 54 && !e.shiftKey || e.which === 102 && !e.shiftKey) {
                      if (again === true) {
                         current.innerText = '';
                         again = false;
@@ -419,7 +426,7 @@ document.addEventListener('keydown', e => {
                   })
 
                   document.addEventListener('keydown', e => {
-                     if (e.which === 55 && !e.shiftKey) {
+                     if (e.which === 55 && !e.shiftKey || e.which === 103 && !e.shiftKey) {
                         if (again === true) {
                            current.innerText = '';
                            again = false;
@@ -428,7 +435,7 @@ document.addEventListener('keydown', e => {
                      })
 
                      document.addEventListener('keydown', e => {
-                        if (e.which === 56 && !e.shiftKey) {
+                        if (e.which === 56 && !e.shiftKey || e.which === 104 && !e.shiftKey) {
                            if (again === true) {
                               current.innerText = '';
                               again = false;
@@ -437,7 +444,7 @@ document.addEventListener('keydown', e => {
                         })
 
                         document.addEventListener('keydown', e => {
-                           if (e.which === 57 && !e.shiftKey) {
+                           if (e.which === 57 && !e.shiftKey || e.which === 105 && !e.shiftKey) {
                               if (again === true) {
                                  current.innerText = '';
                                  again = false;

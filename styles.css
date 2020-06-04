@@ -47,7 +47,7 @@ body {
     background-color: #e0e0e0;
     font-family: 'Orbitron';
     font-weight: bold;
-    font-size: 25px;
+    font-size: 18px;
     color: #00695c;
     display: flex;
     align-items: flex-end;
@@ -57,7 +57,7 @@ body {
 }
 
 #current {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 /* BUTTONS STYLES */
