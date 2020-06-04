@@ -155,8 +155,7 @@
                return;   
          }
          // result = result.toFixed(2);
-         result = result.toLocaleString('en', {
-            maximumFractionDigits: 2 });
+         
          current.innerText = '';
          previous.innerText = result;
          operand1 = result;
