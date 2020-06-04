@@ -154,7 +154,7 @@
             default:
                return;   
          }
-         // result = result.toFixed(2);
+      
          
          current.innerText = '';
          previous.innerText = result;
