@@ -9,7 +9,7 @@ Everything is working, but I am aware that code can be better. So I will keep wo
 
 Set digit Limit to the display
 
-Work with big numbers(not let them seem like a float and cut it into a small number)
+Work with big numbers(operation function is cutting big numbers as if it were just a floating number)
 
 # Improvements
 
