@@ -5,7 +5,7 @@ First release of the Calculator Project for The Odin Project.
 Everything is working, but I am aware that code can be better. So I will keep working on this project.
 
 
-#Bugs to fix
+# Bugs to fix
 
 Set digit Limit to the display
 
@@ -17,4 +17,6 @@ Create a exponential button
 
 improve percentage function
 
-# MAKE CODE SMALLER AND CLEAN
+# Last
+
+Make code smaller and clean
