@@ -6,8 +6,6 @@ Everything is working, but I am aware that code can be better. So I will keep wo
 
 ![screenshot](/images/screenshot.png)
 
-You can use the calculator here -> (https://thneves.github.io/Calculator/)
-
 ## Live Demo
 
 [Live Demo Link](https://thneves.github.io/Calculator/)
