@@ -8,6 +8,10 @@ Everything is working, but I am aware that code can be better. So I will keep wo
 
 You can use the calculator here -> (https://thneves.github.io/Calculator/)
 
+## Live Demo
+
+[Live Demo Link](https://thneves.github.io/Calculator/)
+
 ### Bugs to fix
 
 Set digit Limit to the display
