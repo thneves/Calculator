@@ -4,6 +4,8 @@ First release of the Calculator Project for The Odin Project.
 
 Everything is working, but I am aware that code can be better. So I will keep working on this project.
 
+![screenshot](/images/screenshot.png)
+
 You can use the calculator here -> (https://thneves.github.io/Calculator/)
 
 ### Bugs to fix
